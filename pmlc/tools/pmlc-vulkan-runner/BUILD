@@ -27,19 +27,19 @@ plaidml_cc_library(
 )
 
 
-plaidml_cc_test(
-    name = "vulkan_runner_tests",
-    srcs = [
-    	"vulkan_runner_tests.cc"
-    ],
-    linkopts = [
-    	"-ldl"
-    ],
-    deps = [
-        ":vulkan_runner",
-        "//plaidml2:testenv_mlir",
-        "//testing:matchers",
-        "//tile/codegen",
-        "@gmock//:gtest",
-    ],
-)
+#plaidml_cc_test(
+#    name = "vulkan_runner_tests",
+#    srcs = [
+#    	"vulkan_runner_tests.cc"
+#    ],
+#    linkopts = [
+#    	"-ldl"
+#    ],
+#    deps = [
+#        ":vulkan_runner",
+#        "//plaidml2:testenv_mlir",
+#        "//testing:matchers",
+#        "//tile/codegen",
+#        "@gmock//:gtest",
+#    ],
+#)
